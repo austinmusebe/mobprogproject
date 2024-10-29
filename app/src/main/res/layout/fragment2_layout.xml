@@ -11,15 +11,16 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="12dp">
 
         <!-- Card for T-Shirts -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="12dp"
             app:cardCornerRadius="12dp"
-            app:cardElevation="4dp">
+            app:cardElevation="20dp">
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -38,7 +39,8 @@
                     android:id="@+id/item_label_shirt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/abril_fatface"
                     android:padding="8dp"
                     android:text="@string/dresses"
                     android:textColor="@color/black"
@@ -51,9 +53,9 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="12dp"
             app:cardCornerRadius="12dp"
-            app:cardElevation="4dp">
+            app:cardElevation="20dp">
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -72,7 +74,8 @@
                     android:id="@+id/item_label_trousers"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/abril_fatface"
                     android:padding="8dp"
                     android:text="@string/shirts"
                     android:textColor="@color/black"
@@ -87,7 +90,7 @@
             android:layout_height="200dp"
             android:layout_marginBottom="8dp"
             app:cardCornerRadius="12dp"
-            app:cardElevation="4dp">
+            app:cardElevation="20dp">
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -106,8 +109,8 @@
                     android:id="@+id/item_label_shoes"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/abril_fatface"
                     android:padding="8dp"
                     android:text="@string/shoes"
                     android:textColor="@color/black"
