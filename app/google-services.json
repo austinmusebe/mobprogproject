@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "139504025226",
+    "project_id": "mobileprogramming-be0d0",
+    "storage_bucket": "mobileprogramming-be0d0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:139504025226:android:0df6a45cb4edfb4626b773",
+        "android_client_info": {
+          "package_name": "com.example.mobprogproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "Put your own key here"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
