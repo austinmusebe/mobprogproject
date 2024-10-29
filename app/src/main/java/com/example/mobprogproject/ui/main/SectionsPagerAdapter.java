@@ -10,7 +10,6 @@ import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.example.mobprogproject.Fragment1;
 import com.example.mobprogproject.Fragment2;
-import com.example.mobprogproject.Fragment3;
 import com.example.mobprogproject.R;
 
 /**
@@ -41,9 +40,7 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
             case 1:
                 fragment = new Fragment2();
                 break;
-            case 2:
-                fragment = new Fragment3();
-                break;
+
         }
         return fragment;
     }
@@ -57,6 +54,6 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
     @Override
     public int getCount() {
         // Show 3 total pages.
-        return 3;
+        return 2;
     }
 }
