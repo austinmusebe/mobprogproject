@@ -6,4 +6,15 @@
     <string name="tab_text_2">Women</string>
     <string name="tab_text_3">Kids</string>
     <string name="women">Women</string>
+    <string name="shoes_image">Shoes image</string>
+    <string name="tshirt_image">TShirt image</string>
+    <string name="trousers_image">Trousers image</string>
+    <string name="t_shirts">T-Shirts</string>
+    <string name="shoes">Shoes</string>
+    <string name="trousers">Trousers</string>
+    <string name="dress_image">Dress image</string>
+    <string name="dresses">Dresses</string>
+    <string name="wshirt_image">Wshirt image</string>
+    <string name="shirts">Shirts</string>
+    <string name="heels_image">Heels image</string>
 </resources>

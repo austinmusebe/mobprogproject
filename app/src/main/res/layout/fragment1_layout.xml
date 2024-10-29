@@ -31,7 +31,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
-                    android:contentDescription="T-Shirt image"
+                    android:contentDescription="@string/tshirt_image"
                     android:src="@drawable/shirt" />
 
                 <TextView
@@ -40,7 +40,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:padding="8dp"
-                    android:text="T-Shirts"
+                    android:text="@string/t_shirts"
                     android:textColor="@color/black"
                     android:textSize="48sp"
                     android:textStyle="bold" />
@@ -64,7 +64,7 @@
                     android:id="@+id/item_image_trousers"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:contentDescription="Trousers image"
+                    android:contentDescription="@string/trousers_image"
                     android:scaleType="centerCrop"
                     android:src="@drawable/trousers" />
 
@@ -74,7 +74,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:padding="8dp"
-                    android:text="Trousers"
+                    android:text="@string/trousers"
                     android:textColor="@color/black"
                     android:textSize="48sp"
                     android:textStyle="bold" />
@@ -99,7 +99,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
-                    android:contentDescription="Shoes image"
+                    android:contentDescription="@string/shoes_image"
                     android:src="@drawable/shoes" />
 
                 <TextView
@@ -109,7 +109,7 @@
                     android:layout_gravity="center"
 
                     android:padding="8dp"
-                    android:text="Shoes"
+                    android:text="@string/shoes"
                     android:textColor="@color/black"
                     android:textSize="48sp"
                     android:textStyle="bold" />

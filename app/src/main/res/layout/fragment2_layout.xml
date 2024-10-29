@@ -30,7 +30,7 @@
                     android:id="@+id/item_image_shirt"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:contentDescription="Dress image"
+                    android:contentDescription="@string/dress_image"
                     android:scaleType="centerCrop"
                     android:src="@drawable/dress" />
 
@@ -40,7 +40,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:padding="8dp"
-                    android:text="Dresses"
+                    android:text="@string/dresses"
                     android:textColor="@color/black"
                     android:textSize="48sp"
                     android:textStyle="bold" />
@@ -64,7 +64,7 @@
                     android:id="@+id/item_image_trousers"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:contentDescription="Wshirt image"
+                    android:contentDescription="@string/wshirt_image"
                     android:scaleType="centerCrop"
                     android:src="@drawable/wshirt" />
 
@@ -74,7 +74,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:padding="8dp"
-                    android:text="Shirts"
+                    android:text="@string/shirts"
                     android:textColor="@color/black"
                     android:textSize="48sp"
                     android:textStyle="bold" />
@@ -98,7 +98,7 @@
                     android:id="@+id/item_image_shoes"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:contentDescription="Shoes image"
+                    android:contentDescription="@string/heels_image"
                     android:scaleType="centerCrop"
                     android:src="@drawable/heels" />
 
@@ -109,7 +109,7 @@
                     android:layout_gravity="center"
 
                     android:padding="8dp"
-                    android:text="Shoes"
+                    android:text="@string/shoes"
                     android:textColor="@color/black"
                     android:textSize="48sp"
                     android:textStyle="bold" />
