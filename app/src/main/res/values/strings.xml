@@ -60,4 +60,5 @@
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
     <string name="forget_your_password">Forget your password?</string>
+    <string name="title_activity_maps">MapsActivity</string>
 </resources>

@@ -18,8 +18,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
-    EditText testing;
-    ImageView pic;
+    EditText name;
+    TextView username;
     FirebaseAuth mAuth;
     Button btnLogout;
     TextView textView;
@@ -38,8 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        testing=findViewById(R.id.editTxt1);
-        pic=findViewById(R.id.imageView);
+        username = findViewById(R.id.txtName);
         btnLogout=findViewById(R.id.btnLogout);
         textView=findViewById(R.id.textViewUserDetails);
         mAuth = FirebaseAuth.getInstance();
