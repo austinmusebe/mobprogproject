@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Shipping"
+    android:background="@color/white">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="297dp"
+        android:layout_height="247dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="128dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+
+        android:id="@+id/radiogroup"
+        android:layout_width="188dp"
+        android:layout_height="137dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="86dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioAddress1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="San Francisco"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="64dp"
+            tools:layout_editor_absoluteY="83dp" />
+
+        <RadioButton
+            android:id="@+id/radioAddress2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Los Angeles"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="64dp"
+            tools:layout_editor_absoluteY="158dp" />
+
+        <RadioButton
+            android:id="@+id/radioAddress3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New York"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="64dp"
+            tools:layout_editor_absoluteY="227dp" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

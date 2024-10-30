@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     EditText name;
     TextView username;
     FirebaseAuth mAuth;
-    Button btnLogout;
+    Button btnLogout, btnShopping;
     TextView textView;
     FirebaseUser user;
 
@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
         username = findViewById(R.id.txtName);
         btnLogout=findViewById(R.id.btnLogout);
+        btnShopping = findViewById(R.id.btnShipping);
         textView=findViewById(R.id.textViewUserDetails);
         mAuth = FirebaseAuth.getInstance();
         user = FirebaseAuth.getInstance().getCurrentUser();
@@ -62,7 +63,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-
+        btnShopping.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent j = new Intent(MainActivity.this, Shipping.class);
+                startActivity(j);
+                finish();
+            }
+        });
     }
 }

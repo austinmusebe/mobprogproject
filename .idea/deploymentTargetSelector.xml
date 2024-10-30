@@ -11,7 +11,7 @@
       <SelectionState runConfigName="categories">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="MapsActivity">
+      <SelectionState runConfigName="Shipping">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>
