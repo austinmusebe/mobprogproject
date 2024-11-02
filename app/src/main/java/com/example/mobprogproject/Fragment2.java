@@ -11,6 +11,10 @@ import androidx.fragment.app.Fragment;
 
 public class Fragment2 extends Fragment {
 
+    int shirtCount = 0;
+    int trouserCount = 0;
+    int shoesCount = 0;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

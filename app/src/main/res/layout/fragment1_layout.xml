@@ -7,117 +7,227 @@
     android:layout_height="match_parent"
     android:padding="8dp">
 
-    <!-- LinearLayout to stack the cards vertically -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="12dp">
-
-        <!-- Card for T-Shirts -->
-        <androidx.cardview.widget.CardView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginBottom="12dp"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="20dp">
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="74dp"
+            android:orientation="vertical"
+            android:padding="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-            <FrameLayout
+            <!-- Card for T-Shirt -->
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/cardview_dark_background">
+                android:layout_height="200dp"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="20dp">
 
-                <ImageView
-                    android:id="@+id/item_image_shirt"
+                <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:contentDescription="@string/tshirt_image"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/shirt" />
+                    android:background="@color/cardview_light_background">
 
-                <TextView
-                    android:id="@+id/item_label_shirt"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:fontFamily="@font/abril_fatface"
-                    android:padding="8dp"
-                    android:text="@string/t_shirts"
-                    android:textColor="@color/black"
-                    android:textSize="48sp"
-                    android:textStyle="bold" />
-            </FrameLayout>
-        </androidx.cardview.widget.CardView>
+                    <ImageView
+                        android:id="@+id/item_image_shirts"
+                        android:layout_width="401dp"
+                        android:layout_height="140dp"
+                        android:contentDescription="@string/shoes_image"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/shirt" />
 
-        <!-- Card for Trousers -->
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginBottom="12dp"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="20dp">
+                    <TextView
+                        android:id="@+id/item_label_shirts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="57dp"
+                        android:layout_gravity="bottom|end"
+                        android:fontFamily="@font/abril_fatface"
+                        android:padding="8dp"
+                        android:text="@string/t_shirts"
+                        android:textColor="@color/black"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
 
-            <FrameLayout
+                    <Button
+                        android:id="@+id/btnShirt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:padding="15dp"
+                        android:text="Add to Cart" />
+
+                    <TextView
+                        android:id="@+id/txtShirtCounter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:padding="15dp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/addShirt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/baseline_add_24"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="12dp"/>
+                    <ImageView
+                        android:id="@+id/removeShirt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/baseline_remove_24"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="12dp"/>
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Card for Trouser -->
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/cardview_dark_background">
+                android:layout_height="200dp"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="20dp">
 
-                <ImageView
-                    android:id="@+id/item_image_trousers"
+                <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:contentDescription="@string/trousers_image"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/trousers" />
+                    android:background="@color/cardview_light_background">
 
-                <TextView
-                    android:id="@+id/item_label_trousers"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:fontFamily="@font/abril_fatface"
-                    android:padding="8dp"
-                    android:text="@string/trousers"
-                    android:textColor="@color/black"
-                    android:textSize="48sp"
-                    android:textStyle="bold" />
-            </FrameLayout>
-        </androidx.cardview.widget.CardView>
+                    <ImageView
+                        android:id="@+id/item_image_trousers"
+                        android:layout_width="401dp"
+                        android:layout_height="140dp"
+                        android:contentDescription="@string/shoes_image"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/trousers" />
 
-        <!-- Card for Shoes -->
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginBottom="8dp"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="20dp">
+                    <TextView
+                        android:id="@+id/item_label_trousers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="57dp"
+                        android:layout_gravity="bottom|end"
+                        android:fontFamily="@font/abril_fatface"
+                        android:padding="8dp"
+                        android:text="@string/trousers"
+                        android:textColor="@color/black"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+                    <Button
+                        android:id="@+id/btnTrouser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:padding="15dp"
+                        android:text="Add to Cart" />
+                    <TextView
+                        android:id="@+id/txtTrouserCounter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:padding="15dp"
+                        />
 
-            <FrameLayout
+                    <ImageView
+                        android:id="@+id/addTrouser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/baseline_add_24"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="12dp"/>
+                    <ImageView
+                        android:id="@+id/removeTrouser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/baseline_remove_24"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="12dp"/>
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Card for Shoe -->
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/cardview_dark_background">
+                android:layout_height="200dp"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="20dp">
 
-                <ImageView
-                    android:id="@+id/item_image_shoes"
+                <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
-                    android:contentDescription="@string/shoes_image"
-                    android:src="@drawable/shoes" />
+                    android:background="@color/cardview_light_background">
 
-                <TextView
-                    android:id="@+id/item_label_shoes"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:fontFamily="@font/abril_fatface"
-                    android:padding="8dp"
-                    android:text="@string/shoes"
-                    android:textColor="@color/black"
-                    android:textSize="48sp"
-                    android:textStyle="bold" />
-            </FrameLayout>
-        </androidx.cardview.widget.CardView>
+                    <ImageView
+                        android:id="@+id/item_image_shoes"
+                        android:layout_width="401dp"
+                        android:layout_height="140dp"
+                        android:contentDescription="@string/shoes_image"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/shoes" />
 
-    </LinearLayout>
-</ScrollView>
+                    <TextView
+                        android:id="@+id/item_label_shoes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="57dp"
+                        android:layout_gravity="bottom|end"
+                        android:fontFamily="@font/abril_fatface"
+                        android:padding="8dp"
+                        android:text="@string/shoes"
+                        android:textColor="@color/black"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btnShoes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:padding="15dp"
+                        android:text="Add to Cart" />
+                    <TextView
+                        android:id="@+id/txtShoeCounter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:padding="15dp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/addShoe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/baseline_add_24"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="12dp"/>
+                    <ImageView
+                        android:id="@+id/removeSoe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/baseline_remove_24"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="12dp"/>
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btnCart"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:text="Open Cart" />
+
+        </LinearLayout>
+    </ScrollView>
