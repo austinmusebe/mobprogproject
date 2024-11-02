@@ -60,5 +60,10 @@
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
     <string name="forget_your_password">Forget your password?</string>
-    <string name="already_have_an_account_login_now">Already have an account? Login now</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_cart2">cart2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="add_to_cart">Add to Cart</string>
 </resources>
