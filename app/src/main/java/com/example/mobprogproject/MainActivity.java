@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -21,9 +20,9 @@ public class MainActivity extends AppCompatActivity {
     EditText name;
     TextView username;
     FirebaseAuth mAuth;
-    Button btnLogout, btnShopping;
-    TextView textView;
+    Button btnLogout, btnShopping, btnGoShopping;
     FirebaseUser user;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,10 +37,11 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        username = findViewById(R.id.txtName);
+        username = findViewById(R.id.txtUserDetails);
         btnLogout=findViewById(R.id.btnLogout);
         btnShopping = findViewById(R.id.btnShipping);
-        textView=findViewById(R.id.textViewUserDetails);
+        btnGoShopping = findViewById(R.id.btnGoShopping);
+
         mAuth = FirebaseAuth.getInstance();
         user = FirebaseAuth.getInstance().getCurrentUser();
         if (user == null) {
@@ -51,13 +51,22 @@ public class MainActivity extends AppCompatActivity {
 
         }
         else{
-            textView.setText(user.getEmail());
+            username.setText(user.getEmail());
+
         }
         btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 FirebaseAuth.getInstance().signOut();
                 Intent i = new Intent(MainActivity.this, Login.class);
+                startActivity(i);
+                finish();
+            }
+        });
+        btnGoShopping.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, categories.class);
                 startActivity(i);
                 finish();
             }
@@ -71,5 +80,7 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+
     }
 }
