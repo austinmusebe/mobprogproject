@@ -24,6 +24,7 @@ public class Fragment1 extends Fragment {
     int trouserCount = 0;
     int shoesCount = 0;
     private final List<CartItem> cartItems = new ArrayList<>();
+    Button btnViewAccount;
 
     @Nullable
     @Override
@@ -41,6 +42,16 @@ public class Fragment1 extends Fragment {
         ImageView removeShirt = view.findViewById(R.id.removeShirt);
         Button btnShirt = view.findViewById(R.id.btnShirt);
         Button btnCart = view.findViewById(R.id.btnCart);
+        btnViewAccount = view.findViewById(R.id.btnViewAccount);
+
+        btnViewAccount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getActivity(), MainActivity.class);
+                startActivity(i);
+                getActivity().finish();
+            }
+        });
 
 
 

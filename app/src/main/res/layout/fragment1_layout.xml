@@ -224,10 +224,16 @@
 
             <Button
                 android:id="@+id/btnCart"
-                android:layout_width="300dp"
+                android:layout_width="205dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:text="Open Cart" />
+            <Button
+                android:id="@+id/btnViewAccount"
+                android:layout_width="205dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:text="View Account Info" />
 
         </LinearLayout>
     </ScrollView>

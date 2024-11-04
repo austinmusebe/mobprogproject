@@ -22,6 +22,12 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="first_slide">Choose your product</string>
+    <string name="second_slide">Fast Delivery</string>
+    <string name="third_slide">Good service</string>
+
+    <string name="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
@@ -66,4 +72,5 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="add_to_cart">Add to Cart</string>
+    <string name="choose_your_products">choose your products</string>
 </resources>

@@ -90,6 +90,12 @@ public class register extends AppCompatActivity {
 
                 }
 
+                if(password.length() < 6){
+                    Toast.makeText(register.this, "Password too short", Toast.LENGTH_SHORT).show();
+
+                }
+
+
                 mAuth.createUserWithEmailAndPassword(email, password)
                         .addOnCompleteListener( new OnCompleteListener<AuthResult>() {
                             @Override
