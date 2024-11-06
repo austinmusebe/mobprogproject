@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Checkout">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-16dp">
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="367dp"
+            android:layout_height="137dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="#A020F0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view7"
+            android:layout_width="366dp"
+            android:layout_height="285dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#A020F0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="364dp"
+            android:layout_height="139dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#A020F0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="228dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:text="2. Delivery Details"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/view5"
+            app:layout_constraintTop_toTopOf="@+id/view5" />
+
+        <EditText
+            android:id="@+id/custaddress"
+            android:layout_width="359dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="12dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            app:layout_constraintBottom_toBottomOf="@+id/view3"
+            app:layout_constraintStart_toStartOf="@+id/view3"
+            app:layout_constraintTop_toBottomOf="@+id/textView13"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="228dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="28dp"
+            android:text="3. Order Summary"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/view7"
+            app:layout_constraintTop_toTopOf="@+id/view7" />
+
+        <TextView
+            android:id="@+id/deliverydetails"
+            android:layout_width="354dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="@+id/view5"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/totalitems"
+            android:layout_width="148dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toEndOf="@+id/editTextText5"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <EditText
+            android:id="@+id/editTextText5"
+            android:layout_width="132dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="36dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Total Items"
+            app:layout_constraintStart_toStartOf="@+id/view7"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <EditText
+            android:id="@+id/editTextText6"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="36dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Total"
+            app:layout_constraintStart_toStartOf="@+id/view7"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText5" />
+
+        <Button
+            android:id="@+id/confirmorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="132dp"
+            android:layout_marginTop="36dp"
+            android:text="Confirm Order"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view7" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="228dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="16dp"
+            android:text="1. Customer Address"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/view3"
+            app:layout_constraintTop_toTopOf="@+id/view3" />
+
+        <TextView
+            android:id="@+id/totalamount"
+            android:layout_width="148dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintStart_toEndOf="@+id/editTextText6"
+            app:layout_constraintTop_toBottomOf="@+id/totalitems" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
