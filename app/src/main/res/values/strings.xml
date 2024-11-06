@@ -73,4 +73,5 @@
     <string name="title_notifications">Notifications</string>
     <string name="add_to_cart">Add to Cart</string>
     <string name="choose_your_products">choose your products</string>
+    <string name="add">Add</string>
 </resources>

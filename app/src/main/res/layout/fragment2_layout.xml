@@ -2,122 +2,364 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
 
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
     android:padding="8dp">
 
-    <!-- LinearLayout to stack the cards vertically -->
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="12dp">
+        android:layout_height="match_parent"
+        android:background="@color/black">
 
-        <!-- Card for T-Shirts -->
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginBottom="12dp"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="20dp">
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="169dp"
+            android:layout_height="727dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/cardview_dark_background">
+            <!-- Card for T-Shirts -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="168dp"
+                android:layout_height="156dp"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="20dp">
 
-                <ImageView
-                    android:id="@+id/item_image_shirt"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:contentDescription="@string/dress_image"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/dress" />
+                <FrameLayout
+                    android:layout_width="170dp"
+                    android:layout_height="159dp"
+                    android:background="@color/cardview_dark_background">
 
-                <TextView
-                    android:id="@+id/item_label_shirt"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:fontFamily="@font/abril_fatface"
-                    android:padding="8dp"
-                    android:text="@string/dresses"
-                    android:textColor="@color/black"
-                    android:textSize="48sp"
-                    android:textStyle="bold" />
-            </FrameLayout>
-        </androidx.cardview.widget.CardView>
+                    <ImageView
+                        android:id="@+id/column21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/wbshirt" />
+                </FrameLayout>
 
-        <!-- Card for Trousers -->
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginBottom="12dp"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="20dp">
+            </androidx.cardview.widget.CardView>
 
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/cardview_dark_background">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proxima"
+                android:padding="5dp"
+                android:text="Black Shirt"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
 
-                <ImageView
-                    android:id="@+id/item_image_trousers"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:contentDescription="@string/wshirt_image"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/wshirt" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
                 <TextView
-                    android:id="@+id/item_label_trousers"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:fontFamily="@font/abril_fatface"
-                    android:padding="8dp"
-                    android:text="@string/shirts"
-                    android:textColor="@color/black"
-                    android:textSize="48sp"
-                    android:textStyle="bold" />
-            </FrameLayout>
-        </androidx.cardview.widget.CardView>
+                    android:fontFamily="@font/proxima"
+                    android:padding="5dp"
+                    android:text="$20.00"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
 
-        <!-- Card for Shoes -->
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginBottom="8dp"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="20dp">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_button"
+                    android:paddingLeft="10dp"
+                    android:text="@string/add"
+                    android:textColor="@color/white" />
+            </LinearLayout>
 
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/cardview_dark_background">
 
-                <ImageView
-                    android:id="@+id/item_image_shoes"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:contentDescription="@string/heels_image"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/heels" />
+            <!-- Card for Trousers -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="168dp"
+                android:layout_height="159dp"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="20dp">
+
+                <FrameLayout
+                    android:layout_width="170dp"
+                    android:layout_height="156dp"
+                    android:background="@color/cardview_dark_background">
+
+                    <ImageView
+                        android:id="@+id/column22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/wwshirt" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proxima"
+                android:padding="5dp"
+                android:text="White Shirt"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
                 <TextView
-                    android:id="@+id/item_label_shoes"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:fontFamily="@font/abril_fatface"
-                    android:padding="8dp"
-                    android:text="@string/shoes"
-                    android:textColor="@color/black"
-                    android:textSize="48sp"
-                    android:textStyle="bold" />
-            </FrameLayout>
-        </androidx.cardview.widget.CardView>
+                    android:fontFamily="@font/proxima"
+                    android:padding="5dp"
+                    android:text="$20.00"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
 
-    </LinearLayout>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_button"
+                    android:paddingLeft="10dp"
+                    android:text="@string/add"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+
+            <!-- Card for Shoes -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="149dp"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="20dp">
+
+                <FrameLayout
+                    android:layout_width="170dp"
+                    android:layout_height="150dp"
+                    android:background="@color/cardview_dark_background">
+
+                    <ImageView
+                        android:id="@+id/column23"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/pdunks" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proxima"
+                android:padding="5dp"
+                android:text="Pink Dunks"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proxima"
+                    android:padding="5dp"
+                    android:text="$20.00"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_button"
+                    android:paddingLeft="10dp"
+                    android:text="@string/add"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="14dp"
+            android:orientation="vertical"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!-- Card for T-Shirts -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="168dp"
+                android:layout_height="156dp"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="20dp">
+
+                <FrameLayout
+                    android:layout_width="170dp"
+                    android:layout_height="159dp"
+                    android:background="@color/cardview_dark_background">
+
+                    <ImageView
+                        android:id="@+id/column11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/wbshirt" />
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proxima"
+                android:padding="5dp"
+                android:text="Black Shirt"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proxima"
+                    android:padding="5dp"
+                    android:text="$20.00"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_button"
+                    android:paddingLeft="10dp"
+
+                    />
+            </LinearLayout>
+
+
+            <!-- Card for Trousers -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="168dp"
+                android:layout_height="159dp"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="20dp">
+
+                <FrameLayout
+                    android:layout_width="170dp"
+                    android:layout_height="156dp"
+                    android:background="@color/cardview_dark_background">
+
+                    <ImageView
+                        android:id="@+id/column12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/wwshirt" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proxima"
+                android:padding="5dp"
+                android:text="White Shirt"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proxima"
+                    android:padding="5dp"
+                    android:text="$20.00"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_button"
+                    android:paddingLeft="10dp"/>
+            </LinearLayout>
+
+
+            <!-- Card for Shoes -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="149dp"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="20dp">
+
+                <FrameLayout
+                    android:layout_width="170dp"
+                    android:layout_height="150dp"
+                    android:background="@color/cardview_dark_background">
+
+                    <ImageView
+                        android:id="@+id/column13"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/pdunks" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proxima"
+                android:padding="5dp"
+                android:text="Pink Dunks"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proxima"
+                    android:padding="5dp"
+                    android:text="$20.00"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_button"
+                    android:paddingLeft="10dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </ScrollView>
