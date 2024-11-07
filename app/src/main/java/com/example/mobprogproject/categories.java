@@ -9,9 +9,8 @@ import com.google.android.material.tabs.TabLayout;
 import androidx.viewpager.widget.ViewPager;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 import com.example.mobprogproject.ui.main.SectionsPagerAdapter;
 import com.example.mobprogproject.databinding.ActivityCategoriesBinding;
@@ -19,6 +18,7 @@ import com.example.mobprogproject.databinding.ActivityCategoriesBinding;
 public class categories extends AppCompatActivity {
 
     private ActivityCategoriesBinding binding;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,15 +32,17 @@ public class categories extends AppCompatActivity {
         viewPager.setAdapter(sectionsPagerAdapter);
         TabLayout tabs = binding.tabs;
         tabs.setupWithViewPager(viewPager);
-        FloatingActionButton fab = binding.fab;
+        FloatingActionButton fab = binding.btnCarting;
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null)
-                        .setAnchorView(R.id.fab).show();
+                        .setAnchorView(R.id.btnCarting).show();
             }
         });
+
+
     }
 }

@@ -47,12 +47,17 @@ public class cart extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         // Sample Data for the cart items
-        cartItems = new ArrayList<>();
-        cartItems.add(new CartItem("Item 1", 2, 19.99));
-        cartItems.add(new CartItem("Item 2", 1, 9.99));
-        cartItems.add(new CartItem("Item 3", 5, 14.99));
+//        cartItems = new ArrayList<>();
+//        cartItems.add(new CartItem("Item 1", 2, 19.99));
+//        cartItems.add(new CartItem("Item 2", 1, 9.99));
+//        cartItems.add(new CartItem("Item 3", 5, 14.99));
 
-        List<CartItem> cartItems = (List<CartItem>) getIntent().getSerializableExtra("cartItems");
+        cartItems = (List<CartItem>) getIntent().getSerializableExtra("cartItems");
+        if (cartItems == null){
+            cartItems = new ArrayList<>();
+        }
+
+        //List<CartItem> cartItems = (List<CartItem>) getIntent().getSerializableExtra("cartItems");
 
         cartAdapter = new CartAdapter(cartItems);
         recyclerView.setAdapter(cartAdapter);
