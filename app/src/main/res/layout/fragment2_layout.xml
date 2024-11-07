@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
 
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btnCart"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
@@ -176,11 +177,12 @@
                     android:textSize="15sp" />
 
                 <Button
+                    android:id="@+id/btnCart2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/rounded_button"
-                    android:paddingLeft="10dp"
-                    android:text="@string/add"
+                    android:paddingBottom="10dp"
+                    android:text="cart"
                     android:textColor="@color/white" />
             </LinearLayout>
 
@@ -242,14 +244,14 @@
                     android:textSize="15sp" />
 
                 <Button
+                    android:id="@+id/btnBlackShirt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/add"
-                    android:textColor="@color/white"
                     android:background="@drawable/rounded_button"
                     android:paddingLeft="10dp"
+                    android:text="@string/add"
 
-                    />
+                    android:textColor="@color/white" />
             </LinearLayout>
 
 
@@ -297,12 +299,13 @@
                     android:textSize="15sp" />
 
                 <Button
+                    android:id="@+id/btnWhiteShirt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/add"
-                    android:textColor="@color/white"
                     android:background="@drawable/rounded_button"
-                    android:paddingLeft="10dp"/>
+                    android:paddingLeft="10dp"
+                    android:text="@string/add"
+                    android:textColor="@color/white" />
             </LinearLayout>
 
 
@@ -350,12 +353,13 @@
                     android:textSize="15sp" />
 
                 <Button
+                    android:id="@+id/btnPinkDunks"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/add"
-                    android:textColor="@color/white"
                     android:background="@drawable/rounded_button"
-                    android:paddingLeft="10dp"/>
+                    android:paddingLeft="10dp"
+                    android:text="@string/add"
+                    android:textColor="@color/white" />
             </LinearLayout>
 
         </LinearLayout>
