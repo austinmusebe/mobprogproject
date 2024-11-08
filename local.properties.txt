@@ -1,2 +1,1 @@
-sdk.dir=C:\\Users\\emman\\AppData\\Local\\Android\\Sdk
-MAPS_API_KEY = AIzaSyDbPax8a5Pb82pH21u8ElGhH1FJu_QuKT0
+
