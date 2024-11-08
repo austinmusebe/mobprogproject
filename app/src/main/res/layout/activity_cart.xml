@@ -66,10 +66,11 @@
     <Button
         android:id="@+id/btnCheckout"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginStart="20dp"
         android:layout_marginBottom="50dp"
         android:text="Proceed to Checkout"
+        android:background="@drawable/rounded_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnContinueShopping"
         app:layout_constraintStart_toStartOf="parent" />
@@ -77,10 +78,11 @@
     <Button
         android:id="@+id/btnContinueShopping"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="50dp"
         android:text="Continue shopping"
+        android:background="@drawable/rounded_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

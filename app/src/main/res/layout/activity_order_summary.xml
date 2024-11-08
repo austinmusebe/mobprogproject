@@ -33,10 +33,11 @@
     <Button
         android:id="@+id/btnConfirmPayment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:text="Confirm Payment"
-        android:textColor="@android:color/white"
-        android:padding="12dp"
+        android:background="@drawable/rounded_button"
+        android:textColor="@android:color/black"
+
         android:layout_marginTop="16dp" />
 
 </LinearLayout>

@@ -4,15 +4,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
 
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="8dp">
+    android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="74dp"
             android:orientation="vertical"
-            android:padding="12dp"
+            android:padding="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -23,13 +22,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:layout_marginBottom="8dp"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="20dp">
+                app:cardCornerRadius="12dp">
 
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/cardview_light_background">
+                    android:background="@color/cardview_light_background"
+                    android:padding="5dp">
 
                     <ImageView
                         android:id="@+id/item_image_shirts"
@@ -42,10 +41,9 @@
                     <TextView
                         android:id="@+id/item_label_shirts"
                         android:layout_width="wrap_content"
-                        android:layout_height="57dp"
+                        android:layout_height="wrap_content"
                         android:layout_gravity="bottom|end"
                         android:fontFamily="@font/abril_fatface"
-                        android:padding="8dp"
                         android:text="@string/t_shirts"
                         android:textColor="@color/black"
                         android:textSize="32sp"
@@ -54,9 +52,9 @@
                     <Button
                         android:id="@+id/btnShirt"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="40dp"
                         android:layout_gravity="bottom"
-                        android:padding="15dp"
+                        android:background="@drawable/rounded_button"
                         android:text="Add to Cart" />
 
                     <TextView
@@ -92,13 +90,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:layout_marginBottom="8dp"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="20dp">
+                app:cardCornerRadius="12dp">
 
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/cardview_light_background">
+                    android:background="@color/cardview_light_background"
+                    android:padding="5dp">
 
                     <ImageView
                         android:id="@+id/item_image_trousers"
@@ -111,10 +109,9 @@
                     <TextView
                         android:id="@+id/item_label_trousers"
                         android:layout_width="wrap_content"
-                        android:layout_height="57dp"
+                        android:layout_height="wrap_content"
                         android:layout_gravity="bottom|end"
                         android:fontFamily="@font/abril_fatface"
-                        android:padding="8dp"
                         android:text="@string/trousers"
                         android:textColor="@color/black"
                         android:textSize="32sp"
@@ -122,9 +119,9 @@
                     <Button
                         android:id="@+id/btnTrouser"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="40dp"
                         android:layout_gravity="bottom"
-                        android:padding="15dp"
+                        android:background="@drawable/rounded_button"
                         android:text="Add to Cart" />
                     <TextView
                         android:id="@+id/txtTrouserCounter"
@@ -165,7 +162,8 @@
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/cardview_light_background">
+                    android:background="@color/cardview_light_background"
+                    android:padding="5dp">
 
                     <ImageView
                         android:id="@+id/item_image_shoes"
@@ -178,10 +176,9 @@
                     <TextView
                         android:id="@+id/item_label_shoes"
                         android:layout_width="wrap_content"
-                        android:layout_height="57dp"
+                        android:layout_height="wrap_content"
                         android:layout_gravity="bottom|end"
                         android:fontFamily="@font/abril_fatface"
-                        android:padding="8dp"
                         android:text="@string/shoes"
                         android:textColor="@color/black"
                         android:textSize="32sp"
@@ -190,9 +187,9 @@
                     <Button
                         android:id="@+id/btnShoes"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="40dp"
                         android:layout_gravity="bottom"
-                        android:padding="15dp"
+                        android:background="@drawable/rounded_button"
                         android:text="Add to Cart" />
                     <TextView
                         android:id="@+id/txtShoeCounter"
@@ -224,16 +221,19 @@
 
             <Button
                 android:id="@+id/btnCart"
-                android:layout_width="205dp"
-                android:layout_height="50dp"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
                 android:layout_gravity="center"
-                android:text="Open Cart" />
+                android:text="Open Cart"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/rounded_button"/>
             <Button
                 android:id="@+id/btnViewAccount"
-                android:layout_width="205dp"
-                android:layout_height="50dp"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
                 android:layout_gravity="center"
-                android:text="View Account Info" />
+                android:text="View Account Info"
+                android:background="@drawable/rounded_button"/>
 
         </LinearLayout>
     </ScrollView>

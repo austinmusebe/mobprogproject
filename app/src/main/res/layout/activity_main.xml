@@ -12,11 +12,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="100dp"
-        android:background="@drawable/rectangle_button"
+        android:background="@drawable/rounded_button"
         android:fontFamily="@font/abril_fatface"
         android:text="Logout"
         android:textAllCaps="false"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -49,21 +49,24 @@
 
     <Button
         android:id="@+id/btnShipping"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
         android:layout_marginStart="99dp"
         android:layout_marginEnd="99dp"
-        android:layout_marginBottom="29dp"
+        android:layout_marginBottom="25dp"
         android:text="Change Shipping Address"
+        android:background="@drawable/rounded_button"
         app:layout_constraintBottom_toTopOf="@+id/btnLogout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnGoShopping"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
         android:text="Shop"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_button"
         app:layout_constraintBottom_toTopOf="@+id/btnShipping"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

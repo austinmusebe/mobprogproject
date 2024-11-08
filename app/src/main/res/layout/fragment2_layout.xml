@@ -1,365 +1,377 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
     android:padding="8dp">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/black">
 
-        <LinearLayout
-            android:id="@+id/linearLayout"
-            android:layout_width="169dp"
-            android:layout_height="727dp"
-            android:layout_marginEnd="4dp"
-            android:layout_marginBottom="20dp"
-            android:orientation="vertical"
-            android:padding="5dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <!-- Card for T-Shirts -->
-            <androidx.cardview.widget.CardView
-                android:layout_width="168dp"
-                android:layout_height="156dp"
-                android:layout_marginBottom="12dp"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="20dp">
-
-                <FrameLayout
-                    android:layout_width="170dp"
-                    android:layout_height="159dp"
-                    android:background="@color/cardview_dark_background">
-
-                    <ImageView
-                        android:id="@+id/column21"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/wbshirt" />
-                </FrameLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/proxima"
-                android:padding="5dp"
-                android:text="Black Shirt"
-                android:textColor="@color/white"
-                android:textSize="15sp" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/proxima"
-                    android:padding="5dp"
-                    android:text="$20.00"
-                    android:textColor="@color/white"
-                    android:textSize="15sp" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/rounded_button"
-                    android:paddingLeft="10dp"
-                    android:text="@string/add"
-                    android:textColor="@color/white" />
-            </LinearLayout>
-
-
-            <!-- Card for Trousers -->
-            <androidx.cardview.widget.CardView
-                android:layout_width="168dp"
-                android:layout_height="159dp"
-                android:layout_marginBottom="12dp"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="20dp">
-
-                <FrameLayout
-                    android:layout_width="170dp"
-                    android:layout_height="156dp"
-                    android:background="@color/cardview_dark_background">
-
-                    <ImageView
-                        android:id="@+id/column22"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/wwshirt" />
-                </FrameLayout>
-            </androidx.cardview.widget.CardView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/proxima"
-                android:padding="5dp"
-                android:text="White Shirt"
-                android:textColor="@color/white"
-                android:textSize="15sp" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/proxima"
-                    android:padding="5dp"
-                    android:text="$20.00"
-                    android:textColor="@color/white"
-                    android:textSize="15sp" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/rounded_button"
-                    android:paddingLeft="10dp"
-                    android:text="@string/add"
-                    android:textColor="@color/white" />
-            </LinearLayout>
-
-
-            <!-- Card for Shoes -->
-            <androidx.cardview.widget.CardView
-                android:layout_width="170dp"
-                android:layout_height="149dp"
-                android:layout_marginBottom="8dp"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="20dp">
-
-                <FrameLayout
-                    android:layout_width="170dp"
-                    android:layout_height="150dp"
-                    android:background="@color/cardview_dark_background">
-
-                    <ImageView
-                        android:id="@+id/column23"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        app:srcCompat="@drawable/pdunks" />
-                </FrameLayout>
-            </androidx.cardview.widget.CardView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/proxima"
-                android:padding="5dp"
-                android:text="Pink Dunks"
-                android:textColor="@color/white"
-                android:textSize="15sp" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/proxima"
-                    android:padding="5dp"
-                    android:text="$20.00"
-                    android:textColor="@color/white"
-                    android:textSize="15sp" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/rounded_button"
-                    android:paddingLeft="10dp"
-                    android:text="@string/add"
-                    android:textColor="@color/white" />
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:layout_marginBottom="14dp"
-            android:orientation="vertical"
+            android:columnCount="2"
             android:padding="5dp"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintEnd_toEndOf="parent">
 
-            <!-- Card for T-Shirts -->
+
+            <!-- Card for Black Shirt -->
             <androidx.cardview.widget.CardView
-                android:layout_width="168dp"
-                android:layout_height="156dp"
-                android:layout_marginBottom="12dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_columnWeight="1"
                 app:cardCornerRadius="12dp"
-                app:cardElevation="20dp">
+                app:cardElevation="8dp">
 
-                <FrameLayout
-                    android:layout_width="170dp"
-                    android:layout_height="159dp"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp"
                     android:background="@color/cardview_dark_background">
 
-                    <ImageView
-                        android:id="@+id/column11"
+                    <RelativeLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/wbshirt" />
-                </FrameLayout>
+                        android:layout_height="wrap_content">
 
+                        <ImageView
+                            android:id="@+id/column21"
+                            android:layout_width="match_parent"
+                            android:layout_height="170dp"
+                            app:srcCompat="@drawable/wbshirt" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Black Shirt"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:id="@+id/blackShirt2"
+                            android:layout_below="@+id/column21"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$20.00"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:layout_below="@+id/blackShirt2"/>
+
+                        <Button
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/rounded_button"
+                            android:text="@string/add"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black"
+                            android:layout_below="@+id/column21"
+                            android:layout_alignParentEnd="true"/>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/proxima"
-                android:padding="5dp"
-                android:text="Black Shirt"
-                android:textColor="@color/white"
-                android:textSize="15sp" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/proxima"
-                    android:padding="5dp"
-                    android:text="$20.00"
-                    android:textColor="@color/white"
-                    android:textSize="15sp" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/add"
-                    android:textColor="@color/white"
-                    android:background="@drawable/rounded_button"
-                    android:paddingLeft="10dp"
-
-                    />
-            </LinearLayout>
-
-
-            <!-- Card for Trousers -->
             <androidx.cardview.widget.CardView
-                android:layout_width="168dp"
-                android:layout_height="159dp"
-                android:layout_marginBottom="12dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_columnWeight="1"
                 app:cardCornerRadius="12dp"
-                app:cardElevation="20dp">
+                app:cardElevation="8dp">
 
-                <FrameLayout
-                    android:layout_width="170dp"
-                    android:layout_height="156dp"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp"
                     android:background="@color/cardview_dark_background">
 
-                    <ImageView
-                        android:id="@+id/column12"
+
+                    <RelativeLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/wwshirt" />
-                </FrameLayout>
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/column11"
+                            android:layout_width="match_parent"
+                            android:layout_height="170dp"
+                            app:srcCompat="@drawable/wbshirt" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Black Shirt"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:id="@+id/blackShirt1"
+                            android:layout_below="@+id/column11"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$20.00"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:layout_below="@+id/blackShirt1"/>
+
+                        <Button
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/rounded_button"
+                            android:text="@string/add"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black"
+                            android:layout_alignParentEnd="true"
+                            android:layout_below="@+id/column11"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/proxima"
-                android:padding="5dp"
-                android:text="White Shirt"
-                android:textColor="@color/white"
-                android:textSize="15sp" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/proxima"
-                    android:padding="5dp"
-                    android:text="$20.00"
-                    android:textColor="@color/white"
-                    android:textSize="15sp" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/add"
-                    android:textColor="@color/white"
-                    android:background="@drawable/rounded_button"
-                    android:paddingLeft="10dp"/>
-            </LinearLayout>
-
-
-            <!-- Card for Shoes -->
+            <!-- Card for White Shirt -->
             <androidx.cardview.widget.CardView
-                android:layout_width="170dp"
-                android:layout_height="149dp"
-                android:layout_marginBottom="8dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_columnWeight="1"
                 app:cardCornerRadius="12dp"
-                app:cardElevation="20dp">
+                app:cardElevation="8dp">
 
-                <FrameLayout
-                    android:layout_width="170dp"
-                    android:layout_height="150dp"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp"
                     android:background="@color/cardview_dark_background">
 
-                    <ImageView
-                        android:id="@+id/column13"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        app:srcCompat="@drawable/pdunks" />
-                </FrameLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/column22"
+                            android:layout_width="match_parent"
+                            android:layout_height="170dp"
+                            app:srcCompat="@drawable/wwshirt" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="White Shirt"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:id="@+id/whiteShirt2"
+                            android:layout_below="@+id/column22"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$20.00"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:layout_below="@+id/whiteShirt2"/>
+
+                        <Button
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/rounded_button"
+                            android:text="@string/add"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black"
+                            android:layout_below="@+id/column22"
+                            android:layout_alignParentEnd="true"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <TextView
-                android:layout_width="wrap_content"
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/proxima"
-                android:padding="5dp"
-                android:text="Pink Dunks"
-                android:textColor="@color/white"
-                android:textSize="15sp" />
+                android:layout_margin="8dp"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="8dp">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/proxima"
-                    android:padding="5dp"
-                    android:text="$20.00"
-                    android:textColor="@color/white"
-                    android:textSize="15sp" />
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:background="@color/cardview_dark_background">
 
-                <Button
-                    android:layout_width="wrap_content"
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/column12"
+                            android:layout_width="match_parent"
+                            android:layout_height="170dp"
+                            app:srcCompat="@drawable/wwshirt" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="White Shirt"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:id="@+id/whiteShirt1"
+                            android:layout_below="@id/column12"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$20.00"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:layout_below="@+id/whiteShirt1"/>
+
+                        <Button
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/rounded_button"
+                            android:text="@string/add"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black"
+                            android:layout_below="@+id/column12"
+                            android:layout_alignParentEnd="true"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Card for Pink Dunks -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/add"
-                    android:textColor="@color/white"
-                    android:background="@drawable/rounded_button"
-                    android:paddingLeft="10dp"/>
-            </LinearLayout>
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:background="@color/cardview_dark_background">
 
-        </LinearLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+                        <ImageView
+                            android:id="@+id/column23"
+                            android:layout_width="match_parent"
+                            android:layout_height="170dp"
+                            app:srcCompat="@drawable/pdunks" />
 
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Pink Dunks"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:id="@+id/pinkDunks2"
+                            android:layout_below="@id/column23"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$20.00"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:layout_below="@id/pinkDunks2"/>
+
+                        <Button
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/rounded_button"
+                            android:text="@string/add"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black"
+                            android:layout_below="@id/column23"
+                            android:layout_alignParentEnd="true"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:background="@color/cardview_dark_background">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/column13"
+                            android:layout_width="match_parent"
+                            android:layout_height="170dp"
+                            app:srcCompat="@drawable/pdunks" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Pink Dunks"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:id="@+id/pinkDunks1"
+                            android:layout_below="@id/column13"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$20.00"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:layout_below="@id/pinkDunks1"/>
+
+                        <Button
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/rounded_button"
+                            android:text="@string/add"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black"
+                            android:layout_below="@id/column13"
+                            android:layout_alignParentEnd="true"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
 </ScrollView>
