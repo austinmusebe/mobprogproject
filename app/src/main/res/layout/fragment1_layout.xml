@@ -69,6 +69,8 @@
                             android:background="@drawable/rounded_button"
                             android:text="@string/add"
                             android:textColor="@color/black"
+                            android:scaleX="0.9"
+                            android:scaleY="0.9"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -107,6 +109,105 @@
                             app:srcCompat="@drawable/baseline_remove_24" />
                     </LinearLayout>
                 </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_columnWeight="1"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/cardview_light_background"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/item_image_shirts2"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:contentDescription="@string/shoes_image"
+                    android:src="@drawable/shirt"
+                    android:scaleType="centerCrop"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/item_label_shirts2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/abril_fatface"
+                    android:text="@string/t_shirts"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/item_image_shirts2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$20.00"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="4dp"
+                    android:layout_below="@+id/item_label_shirts2" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintShirt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_label_shirts2"
+                    android:layout_alignParentEnd="true">
+
+                    <Button
+                        android:id="@+id/btnShirt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_button"
+                        android:text="@string/add"
+                        android:textColor="@color/black"
+                        android:scaleX="0.9"
+                        android:scaleY="0.9"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutShirt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/constraintShirt2"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/addShirt2"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginEnd="6dp"
+                        app:srcCompat="@drawable/baseline_add_24" />
+
+                    <TextView
+                        android:id="@+id/txtShirtCounter2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/removeShirt2"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="6dp"
+                        app:srcCompat="@drawable/baseline_remove_24" />
+                </LinearLayout>
+            </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
 
@@ -168,6 +269,8 @@
                             android:background="@drawable/rounded_button"
                             android:text="@string/add"
                             android:textColor="@color/black"
+                            android:scaleX="0.9"
+                            android:scaleY="0.9"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -206,6 +309,105 @@
 
                     </LinearLayout>
                 </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_columnWeight="1"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="8dp">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/cardview_light_background"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/item_image_trousers2"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:contentDescription="@string/shoes_image"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/trousers"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/item_label_trousers2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/abril_fatface"
+                    android:text="@string/trousers"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/item_image_trousers2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$20.00"
+                    android:layout_margin="4dp"
+                    android:textColor="@color/black"
+                    android:layout_below="@+id/item_label_trousers2" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintTrouser2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_label_trousers2"
+                    android:layout_alignParentEnd="true">
+
+                    <Button
+                        android:id="@+id/btnTrouser2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_button"
+                        android:text="@string/add"
+                        android:textColor="@color/black"
+                        android:scaleX="0.9"
+                        android:scaleY="0.9"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutTrouser2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/constraintTrouser2"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/addTrouser2"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginEnd="6dp"
+                        app:srcCompat="@drawable/baseline_add_24" />
+                    <TextView
+                        android:id="@+id/txtTrouserCounter2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="14sp"/>
+                    <ImageView
+                        android:id="@+id/removeTrouser2"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="6dp"
+                        app:srcCompat="@drawable/baseline_remove_24"/>
+
+
+                </LinearLayout>
+            </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
 
@@ -268,6 +470,8 @@
                             android:background="@drawable/rounded_button"
                             android:text="@string/add"
                             android:textColor="@color/black"
+                            android:scaleX="0.9"
+                            android:scaleY="0.9"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -299,7 +503,7 @@
                             android:layout_gravity="center"
                             android:textSize="14sp"/>
                         <ImageView
-                            android:id="@+id/removeSoe"
+                            android:id="@+id/removeShoe"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
                             android:layout_marginStart="6dp"
@@ -310,25 +514,133 @@
                 </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_columnWeight="1"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="8dp">
 
-        <!-- Buttons for Cart and Account Info, placed below items -->
-        <Button
-            android:id="@+id/btnCart"
-            android:layout_width="180dp"
-            android:layout_height="50dp"
-            android:layout_margin="8dp"
-            android:background="@drawable/rounded_button"
-            android:text="@string/open_cart"
-            android:layout_columnSpan="2"/>
 
-        <Button
-            android:id="@+id/btnViewAccount"
-            android:layout_width="180dp"
-            android:layout_height="50dp"
-            android:layout_margin="8dp"
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/cardview_light_background"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/item_image_shoes2"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:contentDescription="@string/shoes_image"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/shoes"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/item_label_shoes2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/abril_fatface"
+                    android:text="@string/shoes"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/item_image_shoes2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_20_00"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/black"
+                    android:layout_below="@+id/item_label_shoes2" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintShoes2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_label_shoes2"
+                    android:layout_alignParentEnd="true">
+
+                    <Button
+                        android:id="@+id/btnShoes2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_button"
+                        android:text="@string/add"
+                        android:textColor="@color/black"
+                        android:scaleX="0.9"
+                        android:scaleY="0.9"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutShoes2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/constraintShoes2"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/addShoe2"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginEnd="6dp"
+                        app:srcCompat="@drawable/baseline_add_24"/>
+
+                    <TextView
+                        android:id="@+id/txtShoeCounter2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:layout_gravity="center"
+                        android:textSize="14sp"/>
+                    <ImageView
+                        android:id="@+id/removeShoe2"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="6dp"
+                        app:srcCompat="@drawable/baseline_remove_24"/>
+
+
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_columnSpan="2"
-            android:background="@drawable/rounded_button"
-            android:text="@string/view_account_info" />
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center">
 
+            <Button
+                android:id="@+id/btnViewAccount"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:scaleX="0.9"
+                android:scaleY="0.9"
+                android:background="@drawable/rounded_button"
+                android:text="@string/view_account" />
+
+            <Button
+                android:id="@+id/btnCart"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:text="@string/open_cart"
+                android:scaleX="0.9"
+                android:scaleY="0.9"/>
+
+        </GridLayout>
     </GridLayout>
 </ScrollView>

@@ -43,6 +43,10 @@ public class Fragment1 extends Fragment {
         Button btnShirt = view.findViewById(R.id.btnShirt);
         Button btnCart = view.findViewById(R.id.btnCart);
         btnViewAccount = view.findViewById(R.id.btnViewAccount);
+        TextView txtShirtCounter2 = view.findViewById(R.id.txtShirtCounter2);
+        ImageView addShirt2 = view.findViewById(R.id.addShirt2);
+        ImageView removeShirt2 = view.findViewById(R.id.removeShirt2);
+        Button btnShirt2 = view.findViewById(R.id.btnShirt2);
 
         btnViewAccount.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,15 +79,43 @@ public class Fragment1 extends Fragment {
         btnShirt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                addItemToCart("T-Shirt", shirtCount, 5.0);
+                addItemToCart("T-Shirt", shirtCount, 20);
             }
         });
 
-        // Repeat similar setup for Trouser and Shoe items
+        //Second shirt
+        addShirt2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                shirtCount++;
+                txtShirtCounter2.setText(String.valueOf(shirtCount));
+            }
+        });
+        removeShirt2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (shirtCount > 0) shirtCount--;
+                txtShirtCounter2.setText(String.valueOf(shirtCount));
+            }
+        });
+
+        btnShirt2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                addItemToCart("T-Shirt", shirtCount, 20);
+            }
+        });
+
+
+        // Set up click listeners for Trouser
         TextView txtTrouserCounter = view.findViewById(R.id.txtTrouserCounter);
         ImageView addTrouser = view.findViewById(R.id.addTrouser);
         ImageView removeTrouser = view.findViewById(R.id.removeTrouser);
         Button btnTrouser = view.findViewById(R.id.btnTrouser);
+        TextView txtTrouserCounter2 = view.findViewById(R.id.txtTrouserCounter2);
+        ImageView addTrouser2 = view.findViewById(R.id.addTrouser2);
+        ImageView removeTrouser2 = view.findViewById(R.id.removeTrouser2);
+        Button btnTrouser2 = view.findViewById(R.id.btnTrouser2);
 
         addTrouser.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -104,15 +136,43 @@ public class Fragment1 extends Fragment {
         btnTrouser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                addItemToCart("Trouser", trouserCount, 10);
+                addItemToCart("Trouser", trouserCount, 20);
+            }
+        });
+
+        //Second trouser
+        addTrouser2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                trouserCount++;
+                txtTrouserCounter2.setText(String.valueOf(trouserCount));
+            }
+        });
+
+        removeTrouser2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (trouserCount > 0) trouserCount--;
+                txtTrouserCounter2.setText(String.valueOf(trouserCount));
+            }
+        });
+
+        btnTrouser2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                addItemToCart("Trouser", trouserCount, 20);
             }
         });
 
         // Set up for shoes as well
         TextView txtShoeCounter = view.findViewById(R.id.txtShoeCounter);
         ImageView addShoe = view.findViewById(R.id.addShoe);
-        ImageView removeShoe = view.findViewById(R.id.removeSoe);
+        ImageView removeShoe = view.findViewById(R.id.removeShoe);
         Button btnShoes = view.findViewById(R.id.btnShoes);
+        TextView txtShoeCounter2 = view.findViewById(R.id.txtShoeCounter2);
+        ImageView addShoe2 = view.findViewById(R.id.addShoe2);
+        ImageView removeShoe2 = view.findViewById(R.id.removeShoe2);
+        Button btnShoes2 = view.findViewById(R.id.btnShoes2);
 
         addShoe.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -133,9 +193,35 @@ public class Fragment1 extends Fragment {
         btnShoes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                addItemToCart("Shoe", shoesCount, 15);
+                addItemToCart("Shoe", shoesCount, 20);
             }
         });
+
+        //Second shoe
+        addShoe2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                shoesCount++;
+                txtShoeCounter2.setText(String.valueOf(shoesCount));
+            }
+        });
+
+        removeShoe2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (shoesCount > 0) shoesCount--;
+                txtShoeCounter2.setText(String.valueOf(shoesCount));
+            }
+        });
+
+        btnShoes2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                addItemToCart("Shoe", shoesCount, 20);
+            }
+        });
+
+
 
         btnCart.setOnClickListener(new View.OnClickListener() {
             @Override

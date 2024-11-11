@@ -9,7 +9,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout2"
-        android:layout_width="400dp"
+        android:layout_width="wrap_content"
         android:layout_height="70dp"
         android:layout_marginStart="2dp"
         android:layout_marginTop="2dp"
@@ -63,28 +63,35 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
 
-    <Button
-        android:id="@+id/btnCheckout"
+    <GridLayout
         android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="50dp"
-        android:text="Proceed to Checkout"
-        android:background="@drawable/rounded_button"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnContinueShopping"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-    <Button
-        android:id="@+id/btnContinueShopping"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="50dp"
-        android:text="Continue shopping"
-        android:background="@drawable/rounded_button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        <Button
+            android:id="@+id/btnContinueShopping"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:scaleX="0.9"
+            android:scaleY="0.9"
+            android:text="@string/continue_shopping" />
+
+        <Button
+            android:id="@+id/btnCheckout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:scaleX="0.9"
+            android:scaleY="0.9"
+            android:text="@string/proceed_to_checkout" />
+
+    </GridLayout>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
