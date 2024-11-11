@@ -86,4 +86,5 @@
     <string name="lets_get_started">Lets get started</string>
     <string name="proceed_to_checkout">Proceed to Checkout</string>
     <string name="continue_shopping">Continue shopping</string>
+    <string name="shopping_cart">Shopping Cart</string>
 </resources>
