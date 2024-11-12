@@ -3,10 +3,10 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 public class AccessToken {
-    @SerializedName("ANJmlWDTs4CgYL3jhtP0qyv4AZv9")
+    @SerializedName("")
     @Expose
     public String accessToken;
-    @SerializedName("3599")
+    @SerializedName("")
     @Expose
     private String expiresIn;
 
