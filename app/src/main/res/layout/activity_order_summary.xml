@@ -33,8 +33,10 @@
     <Button
         android:id="@+id/btnConfirmPayment"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
         android:text="Confirm Payment"
+        android:scaleX="0.9"
+        android:scaleY="0.9"
         android:background="@drawable/rounded_button"
         android:textColor="@android:color/black"
 

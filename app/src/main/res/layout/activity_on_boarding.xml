@@ -30,7 +30,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_button"
-            android:text="Lets get started" />
+            android:text="@string/lets_get_started"
+            android:scaleY="0.9"
+            android:scaleX="0.9"/>
 
         <LinearLayout
             android:id="@+id/dots"

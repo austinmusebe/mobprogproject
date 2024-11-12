@@ -70,6 +70,8 @@
                             android:background="@drawable/rounded_button"
                             android:text="@string/add"
                             android:textColor="@color/black"
+                            android:scaleX="0.9"
+                            android:scaleY="0.9"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -94,7 +96,7 @@
                             app:srcCompat="@drawable/baseline_add_24"/>
 
                         <TextView
-                            android:id="@+id/txtBlackShirt1Counter"
+                            android:id="@+id/txtBlackShirtCounter1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="0"
@@ -167,6 +169,8 @@
                                 android:background="@drawable/rounded_button"
                                 android:text="@string/add"
                                 android:textColor="@color/black"
+                                android:scaleX="0.9"
+                                android:scaleY="0.9"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
@@ -191,7 +195,7 @@
                                 app:srcCompat="@drawable/baseline_add_24"/>
 
                             <TextView
-                                android:id="@+id/txtBlackShirt2Counter"
+                                android:id="@+id/txtBlackShirtCounter2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="0"
@@ -265,6 +269,8 @@
                         android:background="@drawable/rounded_button"
                         android:text="@string/add"
                         android:textColor="@color/black"
+                        android:scaleX="0.9"
+                        android:scaleY="0.9"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -289,7 +295,7 @@
                             app:srcCompat="@drawable/baseline_add_24"/>
 
                         <TextView
-                            android:id="@+id/txtWhiteShirt1Counter"
+                            android:id="@+id/txtWhiteShirtCounter1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/_0"
@@ -360,6 +366,8 @@
                             android:background="@drawable/rounded_button"
                             android:text="@string/add"
                             android:textColor="@color/black"
+                            android:scaleX="0.9"
+                            android:scaleY="0.9"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -384,7 +392,7 @@
                             app:srcCompat="@drawable/baseline_add_24"/>
 
                         <TextView
-                            android:id="@+id/txtWhiteShirt2Counter"
+                            android:id="@+id/txtWhiteShirtCounter2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/_0"
@@ -458,6 +466,8 @@
                             android:background="@drawable/rounded_button"
                             android:text="@string/add"
                             android:textColor="@color/black"
+                            android:scaleX="0.9"
+                            android:scaleY="0.9"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -482,7 +492,7 @@
                             app:srcCompat="@drawable/baseline_add_24"/>
 
                         <TextView
-                            android:id="@+id/txtPinkDunks1Counter"
+                            android:id="@+id/txtPinkDunksCounter1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/_0"
@@ -551,6 +561,8 @@
                             android:background="@drawable/rounded_button"
                             android:text="@string/add"
                             android:textColor="@color/black"
+                            android:scaleX="0.9"
+                            android:scaleY="0.9"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -575,7 +587,7 @@
                             app:srcCompat="@drawable/baseline_add_24"/>
 
                         <TextView
-                            android:id="@+id/txtPinkDunks2Counter"
+                            android:id="@+id/txtPinkDunksCounter2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/_0"
@@ -589,5 +601,33 @@
                     </LinearLayout>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnSpan="2"
+                android:layout_marginTop="12dp"
+                android:paddingBottom="16dp"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/btnViewAccount"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"
+                    android:background="@drawable/rounded_button"
+                    android:text="@string/view_account" />
+
+                <Button
+                    android:id="@+id/btnCart"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_button"
+                    android:text="@string/open_cart"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+            </GridLayout>
         </GridLayout>
 </ScrollView>

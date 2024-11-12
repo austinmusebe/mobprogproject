@@ -80,5 +80,11 @@
     <string name="_0">0</string>
     <string name="pink_dunks">Pink Dunks</string>
     <string name="open_cart">Open Cart</string>
-    <string name="view_account_info">View Account Info</string>
+    <string name="view_account">View Account</string>
+    <string name="change_shipping_address">Change Shipping Address</string>
+    <string name="account_information">Account Information</string>
+    <string name="lets_get_started">Lets get started</string>
+    <string name="proceed_to_checkout">Proceed to Checkout</string>
+    <string name="continue_shopping">Continue shopping</string>
+    <string name="shopping_cart">Shopping Cart</string>
 </resources>
