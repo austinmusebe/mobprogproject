@@ -1,8 +1,11 @@
 package com.example.mobprogproject;
 
 import android.content.Intent;
+import android.location.Address;
+import android.location.Geocoder;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -24,6 +27,10 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.io.IOException;
+import java.util.List;
+import java.util.Locale;
+
 public class Shipping extends AppCompatActivity implements OnMapReadyCallback {
 
     private MapView mapView;
@@ -33,6 +40,8 @@ public class Shipping extends AppCompatActivity implements OnMapReadyCallback {
     private Button btnReturnToHome;
     private DatabaseReference databaseReference;
     private FirebaseAuth mAuth;
+    private AutoCompleteTextView locationInput;
+    private Button btnSearchLocation;
 
     private final LatLng address1 = new LatLng(37.7749, -122.4194); // Example: San Francisco
     private final LatLng address2 = new LatLng(34.0522, -118.2437); // Example: Los Angeles
@@ -48,6 +57,8 @@ public class Shipping extends AppCompatActivity implements OnMapReadyCallback {
         mapView = findViewById(R.id.mapView);
         mapView.onCreate(savedInstanceState);
         mapView.getMapAsync(this);
+        locationInput = findViewById(R.id.locationInput);
+        btnSearchLocation = findViewById(R.id.btnSearchLocation);
 
         radioGroup = findViewById(R.id.radiogroup);
         radio_address1 = findViewById(R.id.radioAddress1);
@@ -57,6 +68,39 @@ public class Shipping extends AppCompatActivity implements OnMapReadyCallback {
 
         mAuth = FirebaseAuth.getInstance();
         databaseReference = FirebaseDatabase.getInstance().getReference();
+
+        btnSearchLocation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String input = locationInput.getText().toString().trim();
+                if (!input.isEmpty()) {
+                    geocodeAndSaveLocation(input);
+                } else {
+                    Toast.makeText(Shipping.this,"Please enter a location", Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            private void geocodeAndSaveLocation(String locationName) {
+                Geocoder geocoder = new Geocoder(Shipping.this, Locale.getDefault());
+                try {
+                    List<Address> addresses = geocoder.getFromLocationName(locationName,1);
+                    if (!addresses.isEmpty()) {
+                        Address address = addresses.get(0);
+                        LatLng latlng = new LatLng(address.getLatitude(), address.getLongitude());
+                        saveShippingLocation(locationName);
+
+                        updateMapLocation(latlng);
+
+                    } else  {
+                        Toast.makeText(Shipping.this, "Location not found.", Toast.LENGTH_SHORT).show();
+                    }
+                } catch (IOException e){
+                    e.printStackTrace();
+                    Toast.makeText(Shipping.this, "Failed to geolocate", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+        });
 
         btnReturnToHome.setOnClickListener(view -> {
             String selectedCity = getSelectedCity(); // Get the selected city

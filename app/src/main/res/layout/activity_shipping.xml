@@ -26,7 +26,7 @@
         android:layout_width="188dp"
         android:layout_height="137dp"
         android:layout_marginStart="86dp"
-        android:layout_marginTop="57dp"
+        android:layout_marginTop="150dp"
         android:layout_marginEnd="86dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,5 +71,30 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mapView" />
+
+    <AutoCompleteTextView
+        android:id="@+id/locationInput"
+        android:layout_width="366dp"
+        android:layout_height="56dp"
+        android:autoSizeTextType="uniform"
+        android:hint="Enter an address"
+        android:text=""
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/radiogroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSearchLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        app:layout_constraintBottom_toTopOf="@+id/mapView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radiogroup" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
