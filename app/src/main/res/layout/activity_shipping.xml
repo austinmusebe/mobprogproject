@@ -12,9 +12,7 @@
         android:id="@+id/mapView"
         android:layout_width="297dp"
         android:layout_height="247dp"
-        android:layout_marginStart="88dp"
-        android:layout_marginEnd="88dp"
-        android:layout_marginBottom="128dp"
+        android:layout_marginBottom="124dp"
         android:elevation="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -63,12 +61,12 @@
 
     <Button
         android:id="@+id/btnReturnToHome"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:text="Back"
         android:background="@drawable/rounded_button"
+        android:text="Back"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnSearchLocation"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mapView" />
 
@@ -76,25 +74,26 @@
         android:id="@+id/locationInput"
         android:layout_width="366dp"
         android:layout_height="56dp"
+        android:layout_marginTop="10dp"
         android:autoSizeTextType="uniform"
+        android:gravity="center"
         android:hint="Enter an address"
         android:text=""
         android:textColor="@color/black"
         android:textColorHint="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/radiogroup"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:gravity="center"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnSearchLocation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/rounded_button"
         android:text="Search"
-        app:layout_constraintBottom_toTopOf="@+id/mapView"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radiogroup" />
+        app:layout_constraintTop_toBottomOf="@+id/mapView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
